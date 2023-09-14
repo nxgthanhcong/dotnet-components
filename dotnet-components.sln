@@ -11,15 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caching", "redis-examples\c
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "realtime-analytics", "realtime-analytics", "{28DCF85A-0BD0-438B-93E2-CCBD7C301CAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "making-events", "redis-examples\making-events\making-events.csproj", "{18A2B8DC-3557-49A3-8CBA-7BBA4F956E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "making-events", "redis-examples\making-events\making-events.csproj", "{18A2B8DC-3557-49A3-8CBA-7BBA4F956E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handle-events", "redis-examples\handle-events\handle-events.csproj", "{0C0EEB91-D237-42BC-ABBD-A12620FF825F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "handle-events", "redis-examples\handle-events\handle-events.csproj", "{0C0EEB91-D237-42BC-ABBD-A12620FF825F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pubsub-messaging", "pubsub-messaging", "{28ED3CB6-FB85-4A98-B8DA-4AB8526455BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "publisher", "redis-examples\publisher\publisher.csproj", "{72BD468E-3823-470B-9891-645F3F72015A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "publisher", "redis-examples\publisher\publisher.csproj", "{72BD468E-3823-470B-9891-645F3F72015A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "subcriber", "redis-examples\subcriber\subcriber.csproj", "{760498C7-F0DC-4C26-A0C2-DD786C2FD348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "subcriber", "redis-examples\subcriber\subcriber.csproj", "{760498C7-F0DC-4C26-A0C2-DD786C2FD348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "job-queue", "job-queue", "{D56A018F-A696-475C-B9B8-585726D05627}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "enqueue", "redis-examples\add-to-queue\enqueue.csproj", "{7EA0E2D9-2F7F-49F7-923A-52C561A4162D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dequeue", "redis-examples\dequeue\dequeue.csproj", "{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,14 @@ Global
 		{760498C7-F0DC-4C26-A0C2-DD786C2FD348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{760498C7-F0DC-4C26-A0C2-DD786C2FD348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{760498C7-F0DC-4C26-A0C2-DD786C2FD348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EA0E2D9-2F7F-49F7-923A-52C561A4162D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA0E2D9-2F7F-49F7-923A-52C561A4162D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA0E2D9-2F7F-49F7-923A-52C561A4162D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA0E2D9-2F7F-49F7-923A-52C561A4162D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +77,9 @@ Global
 		{28ED3CB6-FB85-4A98-B8DA-4AB8526455BC} = {2D7CDD60-EB50-4FD1-A841-2956F2F471EC}
 		{72BD468E-3823-470B-9891-645F3F72015A} = {28ED3CB6-FB85-4A98-B8DA-4AB8526455BC}
 		{760498C7-F0DC-4C26-A0C2-DD786C2FD348} = {28ED3CB6-FB85-4A98-B8DA-4AB8526455BC}
+		{D56A018F-A696-475C-B9B8-585726D05627} = {2D7CDD60-EB50-4FD1-A841-2956F2F471EC}
+		{7EA0E2D9-2F7F-49F7-923A-52C561A4162D} = {D56A018F-A696-475C-B9B8-585726D05627}
+		{4591FEFE-8BF0-4B8C-B00B-AEAD43FF0596} = {D56A018F-A696-475C-B9B8-585726D05627}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BFBA22E-23F3-4E75-8EAF-694120969495}
